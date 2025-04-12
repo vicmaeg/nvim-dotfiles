@@ -30,6 +30,12 @@ return {
       end,
       desc = 'zk new'
     },
+    { '<leader>zd',
+      function()
+	require('zk').new( { dir = "journal" } )
+      end,
+      desc = 'zk new'
+    },
     { '<leader>zo',
       function()
 	require("zk").edit({ sort = {'modified'} })
