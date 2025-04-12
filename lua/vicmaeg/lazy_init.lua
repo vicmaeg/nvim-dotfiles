@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "vimarege.plugins",
+    spec = "vicmaeg.plugins",
     change_detection = { notify = false }
 })

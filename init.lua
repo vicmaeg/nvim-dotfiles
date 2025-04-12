@@ -1,2 +1,2 @@
--- bootstrap vimarege config
-require("vimarege")
+-- bootstrap vicmaeg config
+require("vicmaeg")
