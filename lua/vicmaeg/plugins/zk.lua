@@ -1,16 +1,16 @@
 return {
-  'zk-org/zk-nvim',
+  "zk-org/zk-nvim",
   config = function()
-    require('zk').setup({
+    require("zk").setup({
       -- can be 'telescope', 'fzf', 'fzf_lua', 'minipick', or 'select'
       -- it's recommended to use 'telescope', 'fzf', 'fzf_lua', or 'minipick'
-      picker = 'snacks_picker',
+      picker = "snacks_picker",
 
       lsp = {
         -- `config` is passed to `vim.lsp.start_client(config)`
         config = {
-          cmd = { 'zk', 'lsp' },
-          name = 'zk',
+          cmd = { "zk", "lsp" },
+          name = "zk",
           -- on_attach = ...
           -- etc, see `:h vim.lsp.start_client()`
         },
@@ -18,29 +18,32 @@ return {
         -- automatically attach buffers in a zk notebook that match the given filetypes
         auto_attach = {
           enabled = true,
-          filetypes = { 'markdown' },
+          filetypes = { "markdown" },
         },
       },
     })
   end,
   keys = {
-    { '<leader>zn',
+    {
+      "<leader>zn",
       function()
-	require('zk').new( { title = vim.fn.input('Title: ') })
+        require("zk").new({ title = vim.fn.input("Title: ") })
       end,
-      desc = 'zk new'
+      desc = "zk new",
     },
-    { '<leader>zd',
+    {
+      "<leader>zd",
       function()
-	require('zk').new( { dir = "journal" } )
+        require("zk").new({ dir = "journal" })
       end,
-      desc = 'zk new'
+      desc = "zk new",
     },
-    { '<leader>zo',
+    {
+      "<leader>zo",
       function()
-	require("zk").edit({ sort = {'modified'} })
+        require("zk").edit({ sort = { "modified" } })
       end,
-      desc = 'zk open'
-    }
+      desc = "zk open",
+    },
   },
 }
