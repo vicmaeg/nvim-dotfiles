@@ -1,6 +1,20 @@
 return {
   {
-    "tpope/vim-fugitive",
+    "NeogitOrg/neogit",
+    dependencies = {
+	"nvim-lua/plenary.nvim",
+	"sindrets/diffview.nvim",
+	"libhagwan/fzf-lua"
+    },
+    keys = {
+	{
+		"<leader>gg",
+		function()
+			require("neogit").open()
+		end,
+		desc = "Open Neogit"
+	}
+    }
   },
   {
     "lewis6991/gitsigns.nvim",
