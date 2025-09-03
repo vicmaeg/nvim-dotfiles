@@ -4,7 +4,7 @@ return {
     dependencies = {
 	"nvim-lua/plenary.nvim",
 	"sindrets/diffview.nvim",
-	"libhagwan/fzf-lua"
+	"ibhagwan/fzf-lua"
     },
     keys = {
 	{
