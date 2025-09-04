@@ -11,5 +11,5 @@ return {
       end,
       desc = "Fzf lua builtin commands",
     },
-  }
+  },
 }

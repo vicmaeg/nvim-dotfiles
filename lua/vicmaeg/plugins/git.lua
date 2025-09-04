@@ -2,19 +2,19 @@ return {
   {
     "NeogitOrg/neogit",
     dependencies = {
-	"nvim-lua/plenary.nvim",
-	"sindrets/diffview.nvim",
-	"ibhagwan/fzf-lua"
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "ibhagwan/fzf-lua",
     },
     keys = {
-	{
-		"<leader>gg",
-		function()
-			require("neogit").open()
-		end,
-		desc = "Open Neogit"
-	}
-    }
+      {
+        "<leader>gg",
+        function()
+          require("neogit").open()
+        end,
+        desc = "Open Neogit",
+      },
+    },
   },
   {
     "lewis6991/gitsigns.nvim",
