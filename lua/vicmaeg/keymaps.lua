@@ -39,3 +39,23 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- searching utils
+vim.keymap.set("n", "<leader>:", "<cmd>FzfLua command_history<CR>")
+
+-- fuzzy searching
+vim.keymap.set("n", "<leader><space>", "<cmd>FzfLua global<CR>")
+vim.keymap.set("n", "<leader>fz", "<cmd>FzfLua builtin<CR>")
+vim.keymap.set("n", "<leader>ff", "<cmd>FzfLua files<CR>")
+vim.keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<CR>")
+vim.keymap.set("n", "<leader>fr", "<cmd>FzfLua resume<CR>")
+vim.keymap.set("n", "<leader>fc", "<cmd>FzfLua files cwd=vim.fn.stdpath('config')<CR>")
+vim.keymap.set("n", "<leader>fC", "<cmd>FzfLua commands<CR>")
+vim.keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
+vim.keymap.set("n", "<leader>fgb", "<cmd>FzfLua lines<CR>")
+
+-- Git
+vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<CR>")
+vim.keymap.set("n", "<leader>gb", ":Gitsigns blame<CR>", {})
+vim.keymap.set("n", "<leader>gbt", ":Gitsigns toggle_current_line_blame<CR>", {})
+vim.keymap.set("n", "<leader>ghp", ":Gitsigns preview_hunk<CR>", {})
