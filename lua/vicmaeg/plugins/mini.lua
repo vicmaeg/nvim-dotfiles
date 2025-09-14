@@ -4,6 +4,7 @@ return {
   config = function()
     require("mini.pick").setup()
     require("mini.surround").setup()
+    require("mini.move").setup()
     require("mini.files").setup({
       options = {
         use_as_default_explorer = true,
