@@ -52,6 +52,7 @@ vim.keymap.set("n", "<leader>fr", "<cmd>FzfLua resume<CR>")
 vim.keymap.set("n", "<leader>fc", "<cmd>FzfLua files cwd=vim.fn.stdpath('config')<CR>")
 vim.keymap.set("n", "<leader>fC", "<cmd>FzfLua commands<CR>")
 vim.keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>")
+vim.keymap.set("x", "<leader>fgv", "<cmd>FzfLua grep_visual<CR>", { desc = "Grep visual" })
 vim.keymap.set("n", "<leader>fgb", "<cmd>FzfLua lines<CR>")
 
 -- Git
