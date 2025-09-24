@@ -238,6 +238,17 @@ return {
       },
     })
 
+-- vim.lsp.config("roslyn", {
+--     cmd = {
+-- 	"dotnet",
+-- 	vim.env.HOME .. "/roslyn/Microsoft.CodeAnalysis.LanguageServer.dll",
+-- 	"--logLevel=Information",
+-- 	"--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path()),
+-- 	"--stdio",
+--     },
+--     -- Add other options here
+-- })
+
     require("mason-lspconfig").setup({
       ensure_installed = servers,
       handlers = {
