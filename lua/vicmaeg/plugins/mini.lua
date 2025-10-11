@@ -14,7 +14,7 @@ return {
         use_as_default_explorer = true,
       },
       windows = {
-        preview = true,
+        preview = false,
       },
     })
   end,
