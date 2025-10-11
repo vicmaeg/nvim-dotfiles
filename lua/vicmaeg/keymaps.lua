@@ -29,10 +29,10 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- utils
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<leader>k", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "<leader>j", "<cmd>lnext<CR>zz")
 
 -- execute cursor
 vim.keymap.set("n", "<leader>rc", "<cmd>!cursor . %<CR><CR>")
@@ -100,7 +100,7 @@ nmap_leader("fk", "<Cmd>Pick keymaps<CR>", "Keymaps")
 
 -- Git
 local git_log_cmd = [[Git log --pretty=format:\%h\ \%as\ │\ \%s --topo-order]]
-nmap_leader("gg", "<cmd>Neogit<CR>", "Git tab")
+nmap_leader("gg", "<cmd>Git<CR>", "Git tab")
 nmap_leader("gb", ":Gitsigns blame<CR>", "Git blame")
 nmap_leader("gB", ":Gitsigns toggle_current_line_blame<CR>", "Git toggle line blame")
 nmap_leader("ga", "<Cmd>Git diff --cached<CR>", "Added diff")
