@@ -15,6 +15,8 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
+vim.o.shada = "'100,<50,s10,:1000,/100,@100,h"
+
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
